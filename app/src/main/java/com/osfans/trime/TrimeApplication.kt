@@ -22,6 +22,7 @@ import com.osfans.trime.receiver.RimeIntentReceiver
 import com.osfans.trime.ui.main.LogActivity
 import com.osfans.trime.util.isNightMode
 import com.osfans.trime.worker.BackgroundSyncWork
+import com.osfans.trime.worker.GanRimeUpdateWork
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
@@ -158,6 +159,7 @@ class TrimeApplication : Application() {
     private fun startWorkManager() {
         coroutineScope.launch {
             BackgroundSyncWork.start(applicationContext)
+            GanRimeUpdateWork.start(applicationContext)
         }
     }
 

@@ -25,7 +25,7 @@ android {
     buildToolsVersion = "35.0.0"
 
     defaultConfig {
-        applicationId = "com.osfans.trime"
+        applicationId = "org.ganyutongxunshe.ganinput"
         minSdk = 21
         targetSdk = 35
         versionCode = 20260701

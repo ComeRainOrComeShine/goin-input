@@ -14,6 +14,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.preference.EditTextPreference
 import androidx.preference.Preference
 import androidx.preference.SwitchPreferenceCompat
 import com.osfans.trime.R
@@ -21,6 +22,7 @@ import com.osfans.trime.daemon.launchOnReady
 import com.osfans.trime.data.base.DataManager
 import com.osfans.trime.data.prefs.AppPrefs
 import com.osfans.trime.data.prefs.PreferenceDelegate
+import com.osfans.trime.data.update.GanRimeUpdateManager
 import com.osfans.trime.ui.common.PaddingPreferenceFragment
 import com.osfans.trime.ui.common.withLoadingDialog
 import com.osfans.trime.ui.main.MainViewModel
@@ -31,6 +33,7 @@ import com.osfans.trime.util.customFormatTimeInDefault
 import com.osfans.trime.util.getFileFromUri
 import com.osfans.trime.util.getUriForFile
 import com.osfans.trime.util.toast
+import com.osfans.trime.worker.GanRimeUpdateWork
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import splitties.dimensions.dp
@@ -59,6 +62,9 @@ class ProfileSettingsFragment : PaddingPreferenceFragment() {
     private val backgroundSyncEnable = prefs.periodicBackgroundSync
     private val lastSyncTime by prefs.lastBackgroundSyncTime
     private val lastSyncStatus by prefs.lastBackgroundSyncStatus
+    private val lastGanRimeUpdateTime by prefs.ganRimeLastUpdateTime
+    private val lastGanRimeUpdateStatus by prefs.ganRimeLastUpdateStatus
+    private val lastGanRimeUpdateVersion by prefs.ganRimeLastUpdateVersion
 
     private val onBackgroundSyncEnable = PreferenceDelegate.OnChangeListener<Boolean> { _, v ->
         editSyncIntervalPreference.isEnabled = v
@@ -216,6 +222,55 @@ class ProfileSettingsFragment : PaddingPreferenceFragment() {
                     },
                 )
             }
+            addCategory(R.string.gan_rime_online_update) {
+                isIconSpaceReserved = false
+                addPreference(
+                    EditTextPreference(ctx).apply {
+                        key = AppPrefs.Profile.GAN_RIME_UPDATE_MANIFEST_URL
+                        isIconSpaceReserved = false
+                        setTitle(R.string.gan_rime_update_manifest_url)
+                        setDefaultValue("")
+                        summaryProvider = EditTextPreference.SimpleSummaryProvider.getInstance()
+                        setOnPreferenceChangeListener { _, newValue ->
+                            GanRimeUpdateWork.start(
+                                ctx,
+                                prefs.ganRimeAutoUpdate.getValue(),
+                                newValue as String,
+                            )
+                            true
+                        }
+                    },
+                )
+                addPreference(
+                    SwitchPreferenceCompat(ctx).apply {
+                        key = AppPrefs.Profile.GAN_RIME_AUTO_UPDATE
+                        isIconSpaceReserved = false
+                        setTitle(R.string.gan_rime_auto_update)
+                        setSummary(R.string.gan_rime_auto_update_summary)
+                        setDefaultValue(false)
+                        setOnPreferenceChangeListener { _, newValue ->
+                            GanRimeUpdateWork.start(
+                                ctx,
+                                newValue as Boolean,
+                                prefs.ganRimeUpdateManifestUrl.getValue(),
+                            )
+                            true
+                        }
+                    },
+                )
+                addPreference(
+                    Preference(ctx).apply {
+                        key = GAN_RIME_UPDATE_NOW_KEY
+                        isIconSpaceReserved = false
+                        setTitle(R.string.gan_rime_update_now)
+                        summary = ganRimeUpdateSummary()
+                        setOnPreferenceClickListener {
+                            updateGanRimeOnline()
+                            true
+                        }
+                    },
+                )
+            }
             addCategory(R.string.maintenance) {
                 isIconSpaceReserved = false
                 addPreference(R.string.reset, R.string.reset_hint) {
@@ -255,5 +310,63 @@ class ProfileSettingsFragment : PaddingPreferenceFragment() {
         prefs.periodicBackgroundSync.unregisterOnChangeListener(onBackgroundSyncEnable)
         prefs.periodicBackgroundSyncInterval.unregisterOnChangeListener(onSyncIntervalChange)
         prefs.userDataDir.unregisterOnChangeListener(onUserDataDirChange)
+    }
+
+    private fun ganRimeUpdateSummary(): String {
+        if (lastGanRimeUpdateTime == 0L) {
+            return getString(R.string.gan_rime_update_never)
+        }
+        return getString(
+            R.string.gan_rime_update_status,
+            customFormatTimeInDefault("yyyy-MM-dd HH:mm", lastGanRimeUpdateTime),
+            getString(if (lastGanRimeUpdateStatus) R.string.success else R.string.failure),
+            lastGanRimeUpdateVersion.ifBlank { "N/A" },
+        )
+    }
+
+    private fun updateGanRimeOnline() {
+        val ctx = requireContext()
+        val manifestUrl = prefs.ganRimeUpdateManifestUrl.getValue().trim()
+        if (manifestUrl.isBlank()) {
+            ctx.toast(R.string.gan_rime_update_manifest_url_required)
+            return
+        }
+        lifecycleScope.withLoadingDialog(ctx, R.string.gan_rime_update_progress) {
+            val result =
+                runCatching {
+                    val updateResult = GanRimeUpdateManager.updateFromManifest(manifestUrl)
+                    if (!updateResult.skipped) {
+                        viewModel.rime.runOnReady { deploy() }
+                    }
+                    updateResult
+                }
+            withContext(Dispatchers.Main.immediate) {
+                result
+                    .onSuccess {
+                        prefs.ganRimeLastUpdateStatus.setValue(true)
+                        prefs.ganRimeLastUpdateTime.setValue(System.currentTimeMillis())
+                        if (it.skipped) {
+                            ctx.toast(R.string.gan_rime_update_already_latest)
+                        } else {
+                            ctx.toast(
+                                getString(
+                                    R.string.gan_rime_update_success,
+                                    it.updatedFiles.size,
+                                    it.version,
+                                ),
+                            )
+                        }
+                    }.onFailure {
+                        prefs.ganRimeLastUpdateStatus.setValue(false)
+                        prefs.ganRimeLastUpdateTime.setValue(System.currentTimeMillis())
+                        ctx.toast(it)
+                    }
+                findPreference<Preference>(GAN_RIME_UPDATE_NOW_KEY)?.summary = ganRimeUpdateSummary()
+            }
+        }
+    }
+
+    companion object {
+        private const val GAN_RIME_UPDATE_NOW_KEY = "gan_rime_update_now"
     }
 }

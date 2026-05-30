@@ -22,11 +22,26 @@ object DataManager {
 
     private const val DATA_CHECKSUMS_NAME = "checksums.json"
 
+    private const val LEGACY_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
+          - schema: gan_nanchang_ganxi_mixed
+          - schema: gan_auxiliary_pinyin
+          - schema: koinese_pinyin
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
     private const val SCHEMA_LIST_CUSTOM_PATCH = """
       patch:
+        menu/page_size: 9
         schema_list:
-          - schema: luna_pinyin
-          - schema: luna_pinyin_simp
+          - schema: gan_nanchang_ganxi_mixed
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
     """
 
     private val lock = ReentrantLock()
@@ -110,6 +125,8 @@ object DataManager {
             if (custom.createNewFile()) {
                 custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
             }
+        } else if (custom.readText().trim() == LEGACY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim()) {
+            custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
         }
 
         Timber.d("Synced!")

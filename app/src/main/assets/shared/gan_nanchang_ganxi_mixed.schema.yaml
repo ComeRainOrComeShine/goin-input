@@ -1,0 +1,101 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: gan_nanchang_ganxi_mixed
+  name: 赣语-昌宜兼容
+  version: '0.2.8-test-20260528'
+  author:
+    - 贛語通訊社
+  description: |
+    赣语-昌宜兼容 Rime 方案 v0.1.1。
+    当前以“赣西分宜基础音”为底本复制，供后续扩展赣语-昌宜兼容。
+    需要配合 gan_nanchang_ganxi_mixed.dict.yaml 使用。
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator@custom_phrase
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - derive/(^| )jiy/$1jy/
+    - derive/(^| )uei/$1ui/
+    - derive/(^| )nyon/$1ion/
+    - derive/(^| )ion/$1nyon/
+    - derive/(^| )y/$1iy/
+    - derive/y/v/
+    - derive/(^| )u/$1w/
+
+translator:
+  dictionary: gan_nanchang_ganxi_mixed
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase_gan_nanchang_ganxi_mixed
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔筆畫〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    reverse_lookup: "`[a-z]*'?$"
+
+__patch:
+  # 使用八股文語言模型
+  - grammar:/hant?

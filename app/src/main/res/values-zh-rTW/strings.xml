@@ -7,8 +7,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- 輸入法平臺名稱  -->
-    <string name="app_name_release">同文輸入法</string>
-    <string name="app_name_debug">同文輸入法（除錯模式）</string>
+    <string name="app_name_release">赣语-昌宜兼容</string>
+    <string name="app_name_debug">赣语-昌宜兼容</string>
     <!-- Preference settings -->
     <string name="qq_group_1">同文 QQ 羣 1</string>
     <string name="qq_group_2">同文 QQ 羣 2</string>
@@ -70,8 +70,8 @@
     <string name="custom_sound_effect_name">自訂按鍵音效</string>
     <string name="setup__next">下一步</string>
     <string name="done">完成</string>
-    <string name="setup__enable_ime_hint">在語言和輸入設定中啟用<b>同文輸入法</b></string>
-    <string name="setup__select_ime_hint">選擇<b>同文輸入法</b>作為預設輸入法</string>
+    <string name="setup__enable_ime_hint">在語言和輸入設定中啟用<b>赣语-昌宜兼容</b></string>
+    <string name="setup__select_ime_hint">選擇<b>赣语-昌宜兼容</b>作為預設輸入法</string>
     <string name="setup__enable_ime">啟用輸入法</string>
     <string name="setup__select_ime">選擇輸入法</string>
     <string name="setup__prev">上一步</string>
@@ -217,6 +217,17 @@
     <string name="no_voice_input_installed">尚未安裝語音輸入</string>
     <string name="inline_suggestions">顯示內嵌自動填充建議</string>
     <string name="update_config">更新配置</string>
+    <string name="gan_rime_online_update">贛語方案線上更新</string>
+    <string name="gan_rime_update_manifest_url">更新清單 URL</string>
+    <string name="gan_rime_auto_update">自動更新贛語方案</string>
+    <string name="gan_rime_auto_update_summary">每天檢查一次配置的更新源，更新成功後自動部署</string>
+    <string name="gan_rime_update_now">立即更新贛語方案</string>
+    <string name="gan_rime_update_never">尚未線上更新</string>
+    <string name="gan_rime_update_status">上次更新：%1$s；狀態：%2$s；版本：%3$s</string>
+    <string name="gan_rime_update_manifest_url_required">請先填寫更新清單 URL</string>
+    <string name="gan_rime_update_progress">正在更新贛語方案…</string>
+    <string name="gan_rime_update_already_latest">贛語方案已是最新</string>
+    <string name="gan_rime_update_success">已更新 %1$d 個檔案，版本 %2$s</string>
     <string name="share">分享</string>
     <string name="word_segment">分词</string>
     <string name="star_success">收藏成功</string>

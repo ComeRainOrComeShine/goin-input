@@ -362,6 +362,11 @@ class AppPrefs(
             const val PERIODIC_BACKGROUND_SYNC_INTERVAL = "periodic_background_sync_interval"
             const val LAST_BACKGROUND_SYNC_STATUS = "last_background_sync_status"
             const val LAST_BACKGROUND_SYNC_TIME = "last_background_sync_time"
+            const val GAN_RIME_UPDATE_MANIFEST_URL = "gan_rime_update_manifest_url"
+            const val GAN_RIME_AUTO_UPDATE = "gan_rime_auto_update"
+            const val GAN_RIME_LAST_UPDATE_STATUS = "gan_rime_last_update_status"
+            const val GAN_RIME_LAST_UPDATE_TIME = "gan_rime_last_update_time"
+            const val GAN_RIME_LAST_UPDATE_VERSION = "gan_rime_last_update_version"
         }
 
         val userDataDir = string(USER_DATA_DIR, DataManager.defaultDataDir.path)
@@ -369,6 +374,11 @@ class AppPrefs(
         val periodicBackgroundSyncInterval = int(PERIODIC_BACKGROUND_SYNC_INTERVAL, 30)
         val lastBackgroundSyncStatus = bool(LAST_BACKGROUND_SYNC_STATUS, false)
         val lastBackgroundSyncTime = long(LAST_BACKGROUND_SYNC_TIME, 0L)
+        val ganRimeUpdateManifestUrl = string(GAN_RIME_UPDATE_MANIFEST_URL, "")
+        val ganRimeAutoUpdate = bool(GAN_RIME_AUTO_UPDATE, false)
+        val ganRimeLastUpdateStatus = bool(GAN_RIME_LAST_UPDATE_STATUS, false)
+        val ganRimeLastUpdateTime = long(GAN_RIME_LAST_UPDATE_TIME, 0L)
+        val ganRimeLastUpdateVersion = string(GAN_RIME_LAST_UPDATE_VERSION, "")
     }
 
     class Clipboard(

@@ -7,8 +7,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:en:xliff:document:1.2">
     <!-- Input Method Platform Tittle  -->
-    <string name="app_name_release">Trime</string>
-    <string name="app_name_debug">Trime (Debug)</string>
+    <string name="app_name_release">赣语-昌宜兼容</string>
+    <string name="app_name_debug">赣语-昌宜兼容</string>
     <!-- Preference settings -->
     <string name="qq_group_1">Trime QQ group 1</string>
     <string name="qq_group_2">Trime QQ group 2</string>
@@ -70,8 +70,8 @@
     <string name="custom_sound_effect_name">Custom key Sound Effect</string>
     <string name="setup__next">Next</string>
     <string name="done">Done</string>
-    <string name="setup__enable_ime_hint">Enable <b>Trime</b> in Language and input settings</string>
-    <string name="setup__select_ime_hint">Select <b>Trime</b> as your default input method</string>
+    <string name="setup__enable_ime_hint">Enable <b>赣语-昌宜兼容</b> in Language and input settings</string>
+    <string name="setup__select_ime_hint">Select <b>赣语-昌宜兼容</b> as your default input method</string>
     <string name="setup__enable_ime">Enable Input Method</string>
     <string name="setup__select_ime">Select Input Method</string>
     <string name="setup__prev">Prev</string>
@@ -217,6 +217,17 @@
     <string name="no_voice_input_installed">No voice input installed</string>
     <string name="inline_suggestions">Show inline autofill suggestions</string>
     <string name="update_config">Update config</string>
+    <string name="gan_rime_online_update">Gan Rime online update</string>
+    <string name="gan_rime_update_manifest_url">Update manifest URL</string>
+    <string name="gan_rime_auto_update">Auto-update Gan scheme</string>
+    <string name="gan_rime_auto_update_summary">Check the configured source once per day and deploy after a successful update</string>
+    <string name="gan_rime_update_now">Update Gan scheme now</string>
+    <string name="gan_rime_update_never">Never updated online</string>
+    <string name="gan_rime_update_status">Last update: %1$s; status: %2$s; version: %3$s</string>
+    <string name="gan_rime_update_manifest_url_required">Set the update manifest URL first</string>
+    <string name="gan_rime_update_progress">Updating Gan scheme…</string>
+    <string name="gan_rime_update_already_latest">Gan scheme is already up to date</string>
+    <string name="gan_rime_update_success">Updated %1$d file(s), version %2$s</string>
     <string name="share">Share</string>
     <string name="word_segment">Word segment</string>
     <string name="star_success">Star success</string>
