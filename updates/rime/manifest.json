@@ -1,0 +1,15 @@
+{
+  "version": "2026.05.30-test1",
+  "files": [
+    {
+      "path": "gan_nanchang_ganxi_mixed.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.schema.yaml",
+      "sha256": "fc7dd17eca4461bdd7e487351266232a26e2ed5222dc9b48f6234d1976999e92"
+    },
+    {
+      "path": "gan_nanchang_ganxi_mixed.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
+      "sha256": "8cb7a49e02b1516e30cb3ee17cb91166ce679fb2921242738481f426beaa855a"
+    }
+  ]
+}
