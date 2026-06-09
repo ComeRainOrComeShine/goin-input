@@ -4,7 +4,7 @@
 schema:
   schema_id: gan_nanchang_ganxi_mixed
   name: 赣语-昌宜兼容
-  version: '0.2.8-test-20260528'
+  version: '0.2.15-test-20260609'
   author:
     - 贛語通訊社
   description: |
@@ -55,12 +55,53 @@ speller:
   delimiter: " '"
   algebra:
     - derive/(^| )jiy/$1jy/
-    - derive/(^| )uei/$1ui/
-    - derive/(^| )nyon/$1ion/
-    - derive/(^| )ion/$1nyon/
-    - derive/(^| )y/$1iy/
+    - derive/(^| )yi/$1i/
+    - derive/(^| )ya/$1ia/
+    - derive/(^| )ya/$1yia/
+    - derive/(^| )yo/$1io/
+    - derive/(^| )yo/$1yio/
+    - derive/(^| )ye/$1ie/
+    - derive/(^| )ye/$1yie/
+    - derive/(^| )ye/$1yue/
+    - derive/(^| )yue/$1iye/
+    - derive/(^| )yun/$1iyn/
+    - derive/(^| )yu/$1iy/
+    - derive/(^| )yeu/$1ieu/
+    - derive/(^| )yeu/$1iao/
+    - derive/(^| )yeu/$1yao/
+    - derive/(^| )yan/$1ien/
+    - derive/(^| )yan/$1yen/
+    - derive/(^| )yon/$1ion/
+    - derive/(^| )yon/$1ioin/
+    - derive/(^| )yon/$1yoin/
+    - derive/(^| )yang/$1iang/
+    - derive/(^| )yong/$1iong/
+    - derive/(^| )you/$1iu/
+    - derive/(^| )yin/$1in/
+    - derive/(^| )yun/$1yn/
+    - derive/(^| )wa/$1ua/
+    - derive/(^| )wo/$1uo/
+    - derive/(^| )we/$1ue/
+    - derive/(^| )wai/$1uai/
+    - derive/(^| )woi/$1uoi/
+    - derive/(^| )wei/$1uei/
+    - derive/(^| )wan/$1uan/
+    - derive/(^| )won/$1uon/
+    - derive/(^| )won/$1uoin/
+    - derive/(^| )won/$1woin/
+    - derive/(^| )wen/$1uen/
+    - derive/(^| )wang/$1uang/
+    - derive/(^| )wong/$1uong/
+    - derive/(^| )weng/$1ueng/
+    - derive/(^| )yng/$1yong/
+    - derive/(^| )ngau/$1ngao/
+    - derive/(^| )ngon/$1ngoin/
+    - derive/(^| )nyon/$1yon/
+    - derive/(^| )yon/$1nyon/
+    - derive/([bpmfdtnlgkhzcsjqxr])ui/$1uei/
+    - derive/([bpmfdtnlgkhzcsjqxr])un/$1uen/
+    - derive/([jqx])i/$1/
     - derive/y/v/
-    - derive/(^| )u/$1w/
 
 translator:
   dictionary: gan_nanchang_ganxi_mixed

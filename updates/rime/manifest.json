@@ -1,15 +1,40 @@
 {
-  "version": "2026.05.30-test1",
+  "version": "2026.06.09-test1",
   "files": [
     {
       "path": "gan_nanchang_ganxi_mixed.schema.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.schema.yaml",
-      "sha256": "fc7dd17eca4461bdd7e487351266232a26e2ed5222dc9b48f6234d1976999e92"
+      "sha256": "508c862e67f4f1129048c869c5c79a292f7834401971a7932bc55058500d690d"
     },
     {
       "path": "gan_nanchang_ganxi_mixed.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
-      "sha256": "8cb7a49e02b1516e30cb3ee17cb91166ce679fb2921242738481f426beaa855a"
+      "sha256": "e22af96b4dedeeff62d9316f661586abe5d224a558b8c1d53f12704cb273c26b"
+    },
+    {
+      "path": "gan_auxiliary_comments.tsv",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_comments.tsv",
+      "sha256": "e695fb98d2aa964fb2c172c0317827237cfe555202f5ff228c77aa5ffadecf4d"
+    },
+    {
+      "path": "gan_auxiliary_pinyin.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_pinyin.schema.yaml",
+      "sha256": "3b9716634c31e17d2bd182a8bafcb0b3fcdb20797e9025412d2a0867e70eafb9"
+    },
+    {
+      "path": "koinese_pinyin.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.schema.yaml",
+      "sha256": "3f7df2c7068b12e8ac2a381ac7108b73cc38e4d81596387a10394954c0e19b0e"
+    },
+    {
+      "path": "koinese_pinyin.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.dict.yaml",
+      "sha256": "0f9da7a570473d0b4c8f3c6f419ac950a8cadf0a5950dbe0f4a5bbbd2cbe2bf8"
+    },
+    {
+      "path": "rime.lua",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/rime.lua",
+      "sha256": "97de1b9f64871cc8fc22ad138a56a79fe9b83ec352ecc0058c3a6904c364589d"
     }
   ]
 }
