@@ -105,6 +105,9 @@ speller:
 
 translator:
   dictionary: gan_nanchang_ganxi_mixed
+  user_dict: gan_nanchang_ganxi_mixed
+  db_class: userdb
+  enable_user_dict: true
 
 custom_phrase:
   dictionary: ""

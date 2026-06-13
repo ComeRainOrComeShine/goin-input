@@ -1,15 +1,15 @@
 {
-  "version": "2026.06.09-test1",
+  "version": "2026.06.13-learning1",
   "files": [
     {
       "path": "gan_nanchang_ganxi_mixed.schema.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.schema.yaml",
-      "sha256": "508c862e67f4f1129048c869c5c79a292f7834401971a7932bc55058500d690d"
+      "sha256": "d89308c442d2cc35162be8dc476bce2f1f2c45f047c7221968b2820abffc4c92"
     },
     {
       "path": "gan_nanchang_ganxi_mixed.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
-      "sha256": "e22af96b4dedeeff62d9316f661586abe5d224a558b8c1d53f12704cb273c26b"
+      "sha256": "16c2f3a796b8dae873ee2332e1554d9c52de81511afbdbd94d0f0e8ae840ec19"
     },
     {
       "path": "gan_auxiliary_comments.tsv",
