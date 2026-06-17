@@ -1,5 +1,5 @@
 {
-  "version": "2026.06.13-learning1",
+  "version": "2026.06.17-fenyi-batch-refs",
   "files": [
     {
       "path": "gan_nanchang_ganxi_mixed.schema.yaml",
@@ -9,12 +9,12 @@
     {
       "path": "gan_nanchang_ganxi_mixed.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
-      "sha256": "16c2f3a796b8dae873ee2332e1554d9c52de81511afbdbd94d0f0e8ae840ec19"
+      "sha256": "e74da5ffb68a046b849e7675097a835844a1a14b30bb3837580b901f90601ea9"
     },
     {
       "path": "gan_auxiliary_comments.tsv",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_comments.tsv",
-      "sha256": "e695fb98d2aa964fb2c172c0317827237cfe555202f5ff228c77aa5ffadecf4d"
+      "sha256": "41e2c8436a5ce87e19be68f9be11bd678ea36275af4df78f2064a37e5b5c9858"
     },
     {
       "path": "gan_auxiliary_pinyin.schema.yaml",
