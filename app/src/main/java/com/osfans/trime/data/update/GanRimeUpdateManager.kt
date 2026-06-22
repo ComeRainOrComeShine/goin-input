@@ -34,6 +34,10 @@ object GanRimeUpdateManager {
         "gan_auxiliary_comments.tsv",
         "koinese_pinyin.schema.yaml",
         "koinese_pinyin.dict.yaml",
+        "gonnyufennixyulufa.schema.yaml",
+        "gonnyufennixyulufa.dict.yaml",
+        "gonnyufennixyulufa_auxiliary_comments.tsv",
+        "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
         "rime.lua",
     )
 

@@ -1,40 +1,30 @@
 {
-  "version": "2026.06.17-fenyi-batch-refs",
+  "version": "2026.06.22-fenyi-er",
   "files": [
     {
-      "path": "gan_nanchang_ganxi_mixed.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.schema.yaml",
-      "sha256": "d89308c442d2cc35162be8dc476bce2f1f2c45f047c7221968b2820abffc4c92"
+      "path": "gonnyufennixyulufa.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.schema.yaml",
+      "sha256": "e2ad820e98c7e8f3c374bf6327247a5568c12964608f18ea99a0b21dd06ae844"
     },
     {
-      "path": "gan_nanchang_ganxi_mixed.dict.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
-      "sha256": "e74da5ffb68a046b849e7675097a835844a1a14b30bb3837580b901f90601ea9"
+      "path": "gonnyufennixyulufa.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.dict.yaml",
+      "sha256": "a6aeaf100cbf494563771c8273a20030e5950434cab04108031ad4c078d54ba5"
     },
     {
-      "path": "gan_auxiliary_comments.tsv",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_comments.tsv",
-      "sha256": "41e2c8436a5ce87e19be68f9be11bd678ea36275af4df78f2064a37e5b5c9858"
+      "path": "gonnyufennixyulufa_auxiliary_comments.tsv",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_comments.tsv",
+      "sha256": "c982d5f964032e842ee4c9e7955f32be4910a569b63ea4483e7bcab344972239"
     },
     {
-      "path": "gan_auxiliary_pinyin.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_pinyin.schema.yaml",
-      "sha256": "3b9716634c31e17d2bd182a8bafcb0b3fcdb20797e9025412d2a0867e70eafb9"
-    },
-    {
-      "path": "koinese_pinyin.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.schema.yaml",
-      "sha256": "3f7df2c7068b12e8ac2a381ac7108b73cc38e4d81596387a10394954c0e19b0e"
-    },
-    {
-      "path": "koinese_pinyin.dict.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.dict.yaml",
-      "sha256": "0f9da7a570473d0b4c8f3c6f419ac950a8cadf0a5950dbe0f4a5bbbd2cbe2bf8"
+      "path": "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
+      "sha256": "d6e259c1d177d92ffd416ee570f9e66e942e7f62abacfc5f8f0b41eceb176dff"
     },
     {
       "path": "rime.lua",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/rime.lua",
-      "sha256": "97de1b9f64871cc8fc22ad138a56a79fe9b83ec352ecc0058c3a6904c364589d"
+      "sha256": "a9b37c514f4e6e22293f714a519d19a81a069b3e5d6a7b6491349881758be44c"
     }
   ]
 }

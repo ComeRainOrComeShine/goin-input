@@ -1,0 +1,160 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: gonnyufennixyulufa
+  name: 赣语-分宜版
+  version: '0.1.1-20260611'
+  author:
+    - 贛語通訊社
+  description: |
+    赣语-分宜版 Rime 方案。
+    分宜话独立维护方案，后续更新只进入分宜版词库。
+    需要配合 gonnyufennixyulufa.dict.yaml 使用。
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator@custom_phrase
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - derive/(^| )jon/$1jion/
+    - derive/(^| )jon/$1juon/
+    - derive/(^| )qon/$1qion/
+    - derive/(^| )qon/$1quon/
+    - derive/(^| )xon/$1xuon/
+    - derive/(^| )yon/$1yuon/
+    - derive/(^| )qon/$1ton/
+    - derive/(^| )jon/$1don/
+    - derive/(^| )zi/$1di/
+    - derive/(^| )wen/$1wun/
+    - derive/(^| )weng/$1wung/
+    - derive/(^| )yiu/$1you/
+    - derive/(^| )yen/$1ien/
+    - derive/(^| )yiung/$1yng/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)iung/$1$2yng/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yu/$1$2y/
+    - derive/(^| )([jqx])yu/$1$2iy/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yue/$1$2ye/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yun/$1$2yn/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yuon/$1$2yon/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yui/$1$2yi/
+    - derive/(^| )([bcdfghjklmnpqstxz]|ng)yuei/$1$2yei/
+    - derive/(^| )jiy/$1jy/
+    - derive/(^| )yi/$1i/
+    - derive/(^| )ya/$1ia/
+    - derive/(^| )ya/$1yia/
+    - derive/(^| )yo/$1io/
+    - derive/(^| )yo/$1yio/
+    - derive/(^| )ye/$1ie/
+    - derive/(^| )ye/$1yie/
+    - derive/(^| )ye/$1yue/
+    - derive/(^| )yue/$1iye/
+    - derive/(^| )yun/$1iyn/
+    - derive/(^| )yu/$1iy/
+    - derive/(^| )yeu/$1ieu/
+    - derive/(^| )yeu/$1iao/
+    - derive/(^| )yeu/$1yao/
+    - derive/(^| )yon/$1ion/
+    - derive/(^| )yon/$1ioin/
+    - derive/(^| )yon/$1yoin/
+    - derive/(^| )yang/$1iang/
+    - derive/(^| )yong/$1iong/
+    - derive/(^| )yin/$1in/
+    - derive/(^| )yun/$1yn/
+    - derive/(^| )wa/$1ua/
+    - derive/(^| )wo/$1uo/
+    - derive/(^| )we/$1ue/
+    - derive/(^| )wai/$1uai/
+    - derive/(^| )woi/$1uoi/
+    - derive/(^| )wei/$1uei/
+    - derive/(^| )wan/$1uan/
+    - derive/(^| )won/$1uon/
+    - derive/(^| )won/$1uoin/
+    - derive/(^| )won/$1woin/
+    - derive/(^| )wen/$1uen/
+    - derive/(^| )wang/$1uang/
+    - derive/(^| )wong/$1uong/
+    - derive/(^| )yng/$1yong/
+    - derive/(^| )ngau/$1ngao/
+    - derive/(^| )ngon/$1ngoin/
+    - derive/(^| )nyon/$1yon/
+    - derive/(^| )yon/$1nyon/
+    - derive/([bpmfdtnlgkhzcsjqxr])ui/$1uei/
+    - derive/([bpmfdtnlgkhzcsjqxr])un/$1uen/
+    - derive/([jqx])i/$1/
+    - derive/y/v/
+
+translator:
+  dictionary: gonnyufennixyulufa
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase_gonnyufennixyulufa
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔筆畫〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    reverse_lookup: "`[a-z]*'?$"
+
+__patch:
+  # 使用八股文語言模型
+  - grammar:/hant?
