@@ -1,5 +1,5 @@
 {
-  "version": "2026.06.22-fenyi-er",
+  "version": "2026.07.08-fenyi-gou-shu-zheng",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -9,12 +9,12 @@
     {
       "path": "gonnyufennixyulufa.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.dict.yaml",
-      "sha256": "a6aeaf100cbf494563771c8273a20030e5950434cab04108031ad4c078d54ba5"
+      "sha256": "3145984c6c69fda4efd0cd992851e83d2be77ae79730716116d80609f590fcd2"
     },
     {
       "path": "gonnyufennixyulufa_auxiliary_comments.tsv",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_comments.tsv",
-      "sha256": "c982d5f964032e842ee4c9e7955f32be4910a569b63ea4483e7bcab344972239"
+      "sha256": "559aedf76b3e5e59b3adcf0070955de804318707721affca951bc4be5b35fca4"
     },
     {
       "path": "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
