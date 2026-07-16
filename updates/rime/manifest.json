@@ -1,40 +1,45 @@
 {
-  "version": "2026.06.17-fenyi-batch-refs",
+  "version": "2026.07.16-yiyang-xiaoyun",
   "files": [
     {
-      "path": "gan_nanchang_ganxi_mixed.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.schema.yaml",
-      "sha256": "d89308c442d2cc35162be8dc476bce2f1f2c45f047c7221968b2820abffc4c92"
+      "path": "gonnyufennixyulufa.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.schema.yaml",
+      "sha256": "e2ad820e98c7e8f3c374bf6327247a5568c12964608f18ea99a0b21dd06ae844"
     },
     {
-      "path": "gan_nanchang_ganxi_mixed.dict.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_nanchang_ganxi_mixed.dict.yaml",
-      "sha256": "e74da5ffb68a046b849e7675097a835844a1a14b30bb3837580b901f90601ea9"
+      "path": "gonnyufennixyulufa.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.dict.yaml",
+      "sha256": "3145984c6c69fda4efd0cd992851e83d2be77ae79730716116d80609f590fcd2"
     },
     {
-      "path": "gan_auxiliary_comments.tsv",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_comments.tsv",
-      "sha256": "41e2c8436a5ce87e19be68f9be11bd678ea36275af4df78f2064a37e5b5c9858"
+      "path": "gonnyufennixyulufa_auxiliary_comments.tsv",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_comments.tsv",
+      "sha256": "559aedf76b3e5e59b3adcf0070955de804318707721affca951bc4be5b35fca4"
     },
     {
-      "path": "gan_auxiliary_pinyin.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gan_auxiliary_pinyin.schema.yaml",
-      "sha256": "3b9716634c31e17d2bd182a8bafcb0b3fcdb20797e9025412d2a0867e70eafb9"
+      "path": "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
+      "sha256": "d6e259c1d177d92ffd416ee570f9e66e942e7f62abacfc5f8f0b41eceb176dff"
     },
     {
-      "path": "koinese_pinyin.schema.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.schema.yaml",
-      "sha256": "3f7df2c7068b12e8ac2a381ac7108b73cc38e4d81596387a10394954c0e19b0e"
+      "path": "gonnyuyiyongxyulufa.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.schema.yaml",
+      "sha256": "e95070495a5c0525d0696800153d9037e60d96d90ca2669bc50ad5172637aa55"
     },
     {
-      "path": "koinese_pinyin.dict.yaml",
-      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/koinese_pinyin.dict.yaml",
-      "sha256": "0f9da7a570473d0b4c8f3c6f419ac950a8cadf0a5950dbe0f4a5bbbd2cbe2bf8"
+      "path": "gonnyuyiyongxyulufa.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.dict.yaml",
+      "sha256": "8781865bf3952dcb2a7f2740f4d74abe78890033d2074c3b089f454d72abf09d"
+    },
+    {
+      "path": "gonnyuyiyongxyulufa_user_readings.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa_user_readings.dict.yaml",
+      "sha256": "5bf9e9b5d31de734b8cf6129e9750de9a9d17ec4954d9067b5ad23f4c379d352"
     },
     {
       "path": "rime.lua",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/rime.lua",
-      "sha256": "97de1b9f64871cc8fc22ad138a56a79fe9b83ec352ecc0058c3a6904c364589d"
+      "sha256": "a9b37c514f4e6e22293f714a519d19a81a069b3e5d6a7b6491349881758be44c"
     }
   ]
 }

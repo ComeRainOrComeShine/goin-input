@@ -367,6 +367,8 @@ class AppPrefs(
             const val GAN_RIME_LAST_UPDATE_STATUS = "gan_rime_last_update_status"
             const val GAN_RIME_LAST_UPDATE_TIME = "gan_rime_last_update_time"
             const val GAN_RIME_LAST_UPDATE_VERSION = "gan_rime_last_update_version"
+            const val DEFAULT_GAN_RIME_UPDATE_MANIFEST_URL =
+                "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/manifest.json"
         }
 
         val userDataDir = string(USER_DATA_DIR, DataManager.defaultDataDir.path)
@@ -374,8 +376,8 @@ class AppPrefs(
         val periodicBackgroundSyncInterval = int(PERIODIC_BACKGROUND_SYNC_INTERVAL, 30)
         val lastBackgroundSyncStatus = bool(LAST_BACKGROUND_SYNC_STATUS, false)
         val lastBackgroundSyncTime = long(LAST_BACKGROUND_SYNC_TIME, 0L)
-        val ganRimeUpdateManifestUrl = string(GAN_RIME_UPDATE_MANIFEST_URL, "")
-        val ganRimeAutoUpdate = bool(GAN_RIME_AUTO_UPDATE, false)
+        val ganRimeUpdateManifestUrl = string(GAN_RIME_UPDATE_MANIFEST_URL, DEFAULT_GAN_RIME_UPDATE_MANIFEST_URL)
+        val ganRimeAutoUpdate = bool(GAN_RIME_AUTO_UPDATE, true)
         val ganRimeLastUpdateStatus = bool(GAN_RIME_LAST_UPDATE_STATUS, false)
         val ganRimeLastUpdateTime = long(GAN_RIME_LAST_UPDATE_TIME, 0L)
         val ganRimeLastUpdateVersion = string(GAN_RIME_LAST_UPDATE_VERSION, "")

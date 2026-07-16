@@ -133,7 +133,9 @@ class Rime :
     }
 
     override suspend fun selectCandidate(idx: Int, global: Boolean): Boolean = withRimeContext {
-        selectRimeCandidate(idx, global).also { emitResponse() }
+        val selected = selectRimeCandidate(idx, global)
+        emitResponse()
+        selected
     }
 
     override suspend fun deleteCandidate(idx: Int, global: Boolean): Boolean = withRimeContext {
@@ -208,7 +210,8 @@ class Rime :
     private fun processKeyInner(value: Int, modifiers: Int, isVirtual: Boolean): Boolean {
         lastAsciiTipsText = asciiTipsText
         val handled = processRimeKey(value, modifiers)
-        emitResponse()
+        val commit = getRimeCommit()
+        emitResponse { commit }
         if (!handled) {
             handleRimeMessage(
                 10, // RimeMessage.MessageType.Key,

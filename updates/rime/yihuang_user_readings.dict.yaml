@@ -1,0 +1,14 @@
+# Rime dictionary
+# encoding: utf-8
+# User-learned yihuang readings are written to the user data directory at runtime.
+
+---
+name: yihuang_user_readings
+version: "user"
+sort: by_weight
+use_preset_vocabulary: false
+columns:
+  - text
+  - code
+  - weight
+...

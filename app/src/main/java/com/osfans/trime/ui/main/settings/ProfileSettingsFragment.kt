@@ -229,7 +229,7 @@ class ProfileSettingsFragment : PaddingPreferenceFragment() {
                         key = AppPrefs.Profile.GAN_RIME_UPDATE_MANIFEST_URL
                         isIconSpaceReserved = false
                         setTitle(R.string.gan_rime_update_manifest_url)
-                        setDefaultValue("")
+                        setDefaultValue(AppPrefs.Profile.DEFAULT_GAN_RIME_UPDATE_MANIFEST_URL)
                         summaryProvider = EditTextPreference.SimpleSummaryProvider.getInstance()
                         setOnPreferenceChangeListener { _, newValue ->
                             GanRimeUpdateWork.start(
@@ -247,7 +247,7 @@ class ProfileSettingsFragment : PaddingPreferenceFragment() {
                         isIconSpaceReserved = false
                         setTitle(R.string.gan_rime_auto_update)
                         setSummary(R.string.gan_rime_auto_update_summary)
-                        setDefaultValue(false)
+                        setDefaultValue(true)
                         setOnPreferenceChangeListener { _, newValue ->
                             GanRimeUpdateWork.start(
                                 ctx,

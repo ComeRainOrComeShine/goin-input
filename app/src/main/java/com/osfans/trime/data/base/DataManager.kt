@@ -26,9 +26,10 @@ object DataManager {
       patch:
         menu/page_size: 9
         schema_list:
-          - schema: gan_nanchang_ganxi_mixed
-          - schema: gan_auxiliary_pinyin
-          - schema: koinese_pinyin
+          - schema: gonnyufennixyulufa
+          - schema: yihuang
+          - schema: liuyang
+          - schema: gonnyufennixyulufa_auxiliary_pinyin
         key_binder:
           bindings:
             - { when: always, accept: "Control+Shift+1", toggle: schema }
@@ -38,7 +39,22 @@ object DataManager {
       patch:
         menu/page_size: 9
         schema_list:
-          - schema: gan_nanchang_ganxi_mixed
+          - schema: gonnyufennixyulufa
+          - schema: yihuang
+          - schema: liuyang
+          - schema: gonnyuyiyongxyulufa
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
+    private const val PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
+          - schema: gonnyufennixyulufa
+          - schema: yihuang
+          - schema: liuyang
         key_binder:
           bindings:
             - { when: always, accept: "Control+Shift+1", toggle: schema }
@@ -125,7 +141,10 @@ object DataManager {
             if (custom.createNewFile()) {
                 custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
             }
-        } else if (custom.readText().trim() == LEGACY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim()) {
+        } else if (
+            custom.readText().trim() == LEGACY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
+            custom.readText().trim() == PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim()
+        ) {
             custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
         }
 

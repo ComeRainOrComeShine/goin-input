@@ -2,17 +2,16 @@
 # encoding: utf-8
 
 schema:
-  schema_id: gan_auxiliary_pinyin
-  name: 赣语辅助输入法
+  schema_id: gonnyufennixyulufa_auxiliary_pinyin
+  name: 赣语-分宜版辅助输入法
   version: '0.1.0'
   author:
     - 贛語通訊社
   description: |
     普通话拼音反查赣语音的辅助输入方案。
-    用普通话拼音输入汉字，候选注释显示“赣语输入法-赣西分宜基础音”的拼音。
+    用普通话拼音输入汉字，候选注释显示“赣语-分宜版”的拼音。
   dependencies:
     - stroke
-    - koinese_pinyin
 
 switches:
   - name: ascii_mode
@@ -49,7 +48,7 @@ engine:
   filters:
     - simplifier
     - uniquifier
-    - lua_filter@gan_comment_filter
+    - lua_filter@gonnyufennixyulufa_comment_filter
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -65,7 +64,7 @@ translator:
 
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase_gan_auxiliary_pinyin
+  user_dict: custom_phrase_gonnyufennixyulufa_auxiliary_pinyin
   db_class: stabledb
   enable_completion: false
   enable_sentence: false

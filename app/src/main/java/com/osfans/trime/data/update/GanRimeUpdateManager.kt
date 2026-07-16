@@ -28,12 +28,19 @@ object GanRimeUpdateManager {
     private val prefs = AppPrefs.defaultInstance().profile
 
     private val allowedFileNames = setOf(
-        "gan_nanchang_ganxi_mixed.schema.yaml",
-        "gan_nanchang_ganxi_mixed.dict.yaml",
-        "gan_auxiliary_pinyin.schema.yaml",
-        "gan_auxiliary_comments.tsv",
-        "koinese_pinyin.schema.yaml",
-        "koinese_pinyin.dict.yaml",
+        "gonnyufennixyulufa.schema.yaml",
+        "gonnyufennixyulufa.dict.yaml",
+        "gonnyufennixyulufa_auxiliary_comments.tsv",
+        "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
+        "yihuang.schema.yaml",
+        "yihuang.dict.yaml",
+        "yihuang_user_readings.dict.yaml",
+        "liuyang.schema.yaml",
+        "liuyang.dict.yaml",
+        "liuyang_user_readings.dict.yaml",
+        "gonnyuyiyongxyulufa.schema.yaml",
+        "gonnyuyiyongxyulufa.dict.yaml",
+        "gonnyuyiyongxyulufa_user_readings.dict.yaml",
         "rime.lua",
     )
 
