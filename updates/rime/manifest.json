@@ -1,5 +1,5 @@
 {
-  "version": "2026.07.16-yiyang-xiaoyun",
+  "version": "2026.07.16-yiyang-simplification-fenyi-frequency",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -24,12 +24,12 @@
     {
       "path": "gonnyuyiyongxyulufa.schema.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.schema.yaml",
-      "sha256": "e95070495a5c0525d0696800153d9037e60d96d90ca2669bc50ad5172637aa55"
+      "sha256": "c87e0206f9734169683913f4ac76692a954b725fe2a41ce884560a6c1cb21bf8"
     },
     {
       "path": "gonnyuyiyongxyulufa.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.dict.yaml",
-      "sha256": "8781865bf3952dcb2a7f2740f4d74abe78890033d2074c3b089f454d72abf09d"
+      "sha256": "2101a29eefc854e2dd4eaa74193f71a790f4a1d1988f102ec0708d48d4fba2dd"
     },
     {
       "path": "gonnyuyiyongxyulufa_user_readings.dict.yaml",

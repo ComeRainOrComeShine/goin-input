@@ -4,7 +4,7 @@
 schema:
   schema_id: gonnyuyiyongxyulufa
   name: "弋阳话"
-  version: "2026.07.16-xiaoyun"
+  version: "2026.07.16-simplification-fenyi-frequency"
   author:
     - "赣语通讯社"
   description: |
@@ -18,6 +18,8 @@ switches:
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
 
 engine:
   processors:
@@ -40,6 +42,7 @@ engine:
     - table_translator@custom_phrase
     - script_translator
   filters:
+    - simplifier
     - uniquifier
 
 speller:
