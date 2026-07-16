@@ -26,6 +26,51 @@ object DataManager {
       patch:
         menu/page_size: 9
         schema_list:
+          - schema: gan_nanchang_ganxi_mixed
+          - schema: gan_auxiliary_pinyin
+          - schema: koinese_pinyin
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
+    private const val LEGACY_MIXED_ONLY_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
+          - schema: gan_nanchang_ganxi_mixed
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
+    private const val FENYI_ONLY_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
+          - schema: gonnyufennixyulufa
+          - schema: gonnyufennixyulufa_auxiliary_pinyin
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
+    private const val PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
+          - schema: gonnyufennixyulufa
+          - schema: yihuang
+          - schema: liuyang
+        key_binder:
+          bindings:
+            - { when: always, accept: "Control+Shift+1", toggle: schema }
+    """
+
+    private const val PRE_YIYANG_WITH_AUX_SCHEMA_LIST_CUSTOM_PATCH = """
+      patch:
+        menu/page_size: 9
+        schema_list:
           - schema: gonnyufennixyulufa
           - schema: yihuang
           - schema: liuyang
@@ -43,18 +88,6 @@ object DataManager {
           - schema: yihuang
           - schema: liuyang
           - schema: gonnyuyiyongxyulufa
-        key_binder:
-          bindings:
-            - { when: always, accept: "Control+Shift+1", toggle: schema }
-    """
-
-    private const val PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH = """
-      patch:
-        menu/page_size: 9
-        schema_list:
-          - schema: gonnyufennixyulufa
-          - schema: yihuang
-          - schema: liuyang
         key_binder:
           bindings:
             - { when: always, accept: "Control+Shift+1", toggle: schema }
@@ -141,11 +174,17 @@ object DataManager {
             if (custom.createNewFile()) {
                 custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
             }
-        } else if (
-            custom.readText().trim() == LEGACY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
-            custom.readText().trim() == PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim()
-        ) {
-            custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
+        } else {
+            val currentCustom = custom.readText().trim()
+            val isLegacyDefault =
+                currentCustom == LEGACY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
+                    currentCustom == LEGACY_MIXED_ONLY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
+                    currentCustom == FENYI_ONLY_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
+                    currentCustom == PRE_YIYANG_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim() ||
+                    currentCustom == PRE_YIYANG_WITH_AUX_SCHEMA_LIST_CUSTOM_PATCH.trimIndent().trim()
+            if (isLegacyDefault) {
+                custom.writeText(SCHEMA_LIST_CUSTOM_PATCH.trimIndent())
+            }
         }
 
         Timber.d("Synced!")
