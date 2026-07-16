@@ -1,5 +1,5 @@
 {
-  "version": "2026.07.16-yiyang-simplification-fenyi-frequency",
+  "version": "2026.07.17-yihuang-phrase-learning",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -35,6 +35,21 @@
       "path": "gonnyuyiyongxyulufa_user_readings.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa_user_readings.dict.yaml",
       "sha256": "5bf9e9b5d31de734b8cf6129e9750de9a9d17ec4954d9067b5ad23f4c379d352"
+    },
+    {
+      "path": "yihuang.schema.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/yihuang.schema.yaml",
+      "sha256": "91b829232ea59b56e43bf8e5eaa7df3e1cdb86c72204fb366cf01dd89ca99c58"
+    },
+    {
+      "path": "yihuang.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/yihuang.dict.yaml",
+      "sha256": "0c98dfcbf0f0b59c52e42364f4e769623b9235c6301116ad833f3bf0aef702a4"
+    },
+    {
+      "path": "yihuang_user_readings.dict.yaml",
+      "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/yihuang_user_readings.dict.yaml",
+      "sha256": "dd611145eb8c9e3e5bab54ff1bff2b6f309942661a155dfd1cb964bd1fdef053"
     },
     {
       "path": "rime.lua",
