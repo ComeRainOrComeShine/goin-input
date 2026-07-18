@@ -1,5 +1,5 @@
 {
-    "sha256": "cfbdbfd3181c18fe0325aeb3144d70b6c8fcd3f87f3153e19406036580be9a02",
+    "sha256": "12043abbafacb385bc7a30710c6348b6499baa27aa34b900c42969e3e6e30ca2",
     "files": {
         "shared": "",
         "shared/default.yaml": "dd55653a991f9418eb425ee2112666f82e3e753c5ce3ed5702dd243041a45382",
@@ -8,8 +8,8 @@
         "shared/gonnyufennixyulufa.schema.yaml": "e2ad820e98c7e8f3c374bf6327247a5568c12964608f18ea99a0b21dd06ae844",
         "shared/gonnyufennixyulufa_auxiliary_comments.tsv": "559aedf76b3e5e59b3adcf0070955de804318707721affca951bc4be5b35fca4",
         "shared/gonnyufennixyulufa_auxiliary_pinyin.schema.yaml": "d6e259c1d177d92ffd416ee570f9e66e942e7f62abacfc5f8f0b41eceb176dff",
-        "shared/gonnyuyiyongxyulufa.dict.yaml": "2101a29eefc854e2dd4eaa74193f71a790f4a1d1988f102ec0708d48d4fba2dd",
-        "shared/gonnyuyiyongxyulufa.schema.yaml": "c87e0206f9734169683913f4ac76692a954b725fe2a41ce884560a6c1cb21bf8",
+        "shared/gonnyuyiyongxyulufa.dict.yaml": "e93decb6a7524e308fec88338645052738e8100e1f01a2b4c8f32da4cfd242c7",
+        "shared/gonnyuyiyongxyulufa.schema.yaml": "c1bbb37371a895a63a11ddb0b8eb5230c91e151540a06f0fcd2e0669596701fa",
         "shared/gonnyuyiyongxyulufa_user_readings.dict.yaml": "5bf9e9b5d31de734b8cf6129e9750de9a9d17ec4954d9067b5ad23f4c379d352",
         "shared/key_bindings.yaml": "5c484257cccbab899bc874dfeb9257ce7190c99fee3abc33321767c8dac56af9",
         "shared/liuyang.dict.yaml": "4624b7672e47587eedbe46ed58a0b185651358f68d79f4190b5780d826e51383",

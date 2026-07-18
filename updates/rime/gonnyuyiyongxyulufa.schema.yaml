@@ -4,7 +4,7 @@
 schema:
   schema_id: gonnyuyiyongxyulufa
   name: "弋阳话"
-  version: "2026.07.16-simplification-fenyi-frequency"
+  version: "2026.07.18-simplified-rare-low"
   author:
     - "赣语通讯社"
   description: |
@@ -19,6 +19,7 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
+    reset: 1
     states: [ 漢字, 汉字 ]
 
 engine:
