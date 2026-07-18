@@ -1,19 +1,19 @@
 {
-    "sha256": "12043abbafacb385bc7a30710c6348b6499baa27aa34b900c42969e3e6e30ca2",
+    "sha256": "b03cf7db9cdaeb3fdc8e9a0b3c1fbac66f4fd83c638015c43ec6f0c7f170bd67",
     "files": {
         "shared": "",
         "shared/default.yaml": "dd55653a991f9418eb425ee2112666f82e3e753c5ce3ed5702dd243041a45382",
         "shared/essay.txt": "196d508a9bb12fc6d711eed83f5ddc4d5c2d382d92d15b4e51175e4d3802cfab",
         "shared/gonnyufennixyulufa.dict.yaml": "3145984c6c69fda4efd0cd992851e83d2be77ae79730716116d80609f590fcd2",
-        "shared/gonnyufennixyulufa.schema.yaml": "e2ad820e98c7e8f3c374bf6327247a5568c12964608f18ea99a0b21dd06ae844",
+        "shared/gonnyufennixyulufa.schema.yaml": "ee57dccf63a74c227d8ef5d5ebe704add338a07ace921bf1bdbd0da37c94cf30",
         "shared/gonnyufennixyulufa_auxiliary_comments.tsv": "559aedf76b3e5e59b3adcf0070955de804318707721affca951bc4be5b35fca4",
         "shared/gonnyufennixyulufa_auxiliary_pinyin.schema.yaml": "d6e259c1d177d92ffd416ee570f9e66e942e7f62abacfc5f8f0b41eceb176dff",
         "shared/gonnyuyiyongxyulufa.dict.yaml": "e93decb6a7524e308fec88338645052738e8100e1f01a2b4c8f32da4cfd242c7",
-        "shared/gonnyuyiyongxyulufa.schema.yaml": "c1bbb37371a895a63a11ddb0b8eb5230c91e151540a06f0fcd2e0669596701fa",
+        "shared/gonnyuyiyongxyulufa.schema.yaml": "dfb1772c17204db1c91858a69660c690df84337d4025cef5eb4d87d0f689538d",
         "shared/gonnyuyiyongxyulufa_user_readings.dict.yaml": "5bf9e9b5d31de734b8cf6129e9750de9a9d17ec4954d9067b5ad23f4c379d352",
         "shared/key_bindings.yaml": "5c484257cccbab899bc874dfeb9257ce7190c99fee3abc33321767c8dac56af9",
         "shared/liuyang.dict.yaml": "4624b7672e47587eedbe46ed58a0b185651358f68d79f4190b5780d826e51383",
-        "shared/liuyang.schema.yaml": "3bab2817ce0737ed3a5b163bb25bbbac16fcece8114985fbaffa9e87974e291b",
+        "shared/liuyang.schema.yaml": "96f6b83946f5790132c84ad1ff623f997ee5ddd123aa6c587004214b64d3b768",
         "shared/liuyang_user_readings.dict.yaml": "a49349513285df3e4df0313c271d511e9f92b13474bad45809d644e708ebb343",
         "shared/luna_pinyin.dict.yaml": "270b0c6879436d7b0b606aa684507ea7e173c62b6d5df3966804637872d520fd",
         "shared/luna_pinyin.schema.yaml": "df48caa2901ca04d79978af926c79b118b3e6e5b5cf97b9d8c9b9d67d748a744",
@@ -61,7 +61,7 @@
         "shared/tongwenfeng.trime.yaml": "55cc00c10d3234309cfba10dd1ea48c8324dbbb06dca862e3eef528f16e20e05",
         "shared/trime.yaml": "6d2271f039b623598d7c4cbc95e362f382c9fe1ff8404028697162a0296ce254",
         "shared/yihuang.dict.yaml": "0c98dfcbf0f0b59c52e42364f4e769623b9235c6301116ad833f3bf0aef702a4",
-        "shared/yihuang.schema.yaml": "91b829232ea59b56e43bf8e5eaa7df3e1cdb86c72204fb366cf01dd89ca99c58",
+        "shared/yihuang.schema.yaml": "df9c548bcbfe0251ab42799d5fcee35fa7c630ca86d5e489e2635cf29e25e4b4",
         "shared/yihuang_user_readings.dict.yaml": "dd611145eb8c9e3e5bab54ff1bff2b6f309942661a155dfd1cb964bd1fdef053"
     }
 }

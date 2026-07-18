@@ -3,7 +3,7 @@
 
 schema:
   schema_id: liuyang
-  name: "浏阳话"
+  name: "浏阳版"
   version: "2026.06.24-fenyi-transfer"
   author:
     - "Generated from Fenyi dictionary and Liuyang batch replacement table"

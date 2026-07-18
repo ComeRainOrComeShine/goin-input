@@ -3,7 +3,7 @@
 
 schema:
   schema_id: yihuang
-  name: "宜黃話"
+  name: "宜黃版"
   version: "2026.06.23-phrase-learning"
   author:
     - "Generated from 【批量替换表】.xlsx"
