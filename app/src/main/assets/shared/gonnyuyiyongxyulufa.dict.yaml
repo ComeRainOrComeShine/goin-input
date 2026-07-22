@@ -6,7 +6,7 @@
 
 ---
 name: gonnyuyiyongxyulufa
-version: "2026-07-18-xiaoyun-fenyi-frequency"
+version: "2026-07-22-vocabulary"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
@@ -1082,20 +1082,16 @@ import_tables:
 赣语通讯社	gan nyu tung xin sa	100000
 我们	a men	98740
 他们	to men	93969
-自己	ci ji	90933
 没有	meh yiu	87597
 国家	gueh ga	79520
-可以	ko yi	70958
 发展	fah zen	68664
 工作	gung zoh	66367
-这个	yen go	61310
 什么	seh mo	59317
 主要	jyu yau	57991
 问题	men ti	55563
 进行	jin hen	54355
 地方	ti fong	52641
 已经	yi jing	51289
-这样	yen yan	48926
 全国	qien gueh	48874
 经济	jing ji	48718
 这些	yen xia	47400
@@ -1108,7 +1104,6 @@ import_tables:
 起来	qi loi	39788
 地区	ti qyu	39590
 如果	lu guo	38374
-开始	koi si	38139
 技术	qi xiuh	37664
 重要	qiung yau	37557
 美国	mi gueh	36089
@@ -1122,7 +1117,6 @@ import_tables:
 历史	lih si	34460
 世界	si gai	34387
 其中	qi jyung	34173
-现在	xien zai	34145
 天安门	tien ngon men	34010
 不能	feh nai	33939
 一些	yih xia	33468
@@ -1298,13 +1292,11 @@ import_tables:
 农业	nung nie	16233
 经过	jing guo	16218
 专业	jyuon nie	16214
-准备	jyun bi	16199
 增加	zen ga	16195
 获得	hoh deh	16128
 旅游	loi yiu	16124
 一声	yih sen	16017
 觉得	goh deh	15995
-一起	yih qi	15976
 理论	li len	15973
 今天	jin tien	15960
 非常	fi san	15958
@@ -1341,7 +1333,6 @@ import_tables:
 可是	ko si	14820
 不知	feh zi	14806
 政策	zen ceh	14792
-不要	feh yau	14786
 资本	zi ben	14732
 继续	ji suh	14690
 年代	nien tai	14659
@@ -1349,7 +1340,6 @@ import_tables:
 位于	wi jyu	14654
 任何	in ho	14635
 权力	qien lih	14581
-那个	no go	14550
 执行	zeh hen	14504
 先生	xien sen	14470
 解决	hai jyueh	14468
@@ -1734,7 +1724,6 @@ import_tables:
 离开	li koi	7600
 困难	kun tan	7599
 事件	si qien	7578
-哪里	lai li	7571
 实在	seh zai	7557
 见到	jien dau	7522
 装备	jyuong bi	7520
@@ -2425,7 +2414,6 @@ import_tables:
 邓小平	den xiau pin	4055
 是从	si qiung	4054
 针对	zen duoi	4053
-外面	ngai mien	4049
 争取	zen qi	4048
 发育	fah yuk	4047
 桃花	tau fa	4047
@@ -2490,14 +2478,12 @@ import_tables:
 大约	tai yah	3858
 长江大桥	can gong tai qiau	3858
 依据	yi jyu	3856
-放心	fong xin	3856
 国外	gueh ngai	3852
 江夏区	gong ha qyu	3852
 北方	beh fong	3850
 厉害	li hai	3850
 本行政区域	ben hen zen qyu yueh	3850
 改造	goi cau	3846
-明朝	meng cau	3845
 固定	gu ding	3844
 太监	tai gan	3843
 停止	tin zi	3842
@@ -3893,7 +3879,6 @@ import_tables:
 边缘	bien yen	1932
 深度	sen tu	1930
 城中	sen jyung	1929
-屋里	wuh li	1928
 为止	wi zi	1927
 大气	tai xi	1927
 姓名	xing min	1924
@@ -3973,7 +3958,6 @@ import_tables:
 亲兵	qin bin	1877
 伊斯兰教	yi si lan gau	1877
 湖南省	fu lang sen	1877
-街上	gai sang	60000
 何必	ho bih	1876
 服装	fuh jyuong	1876
 火箭	fo jien	1876
@@ -4028,7 +4012,6 @@ import_tables:
 能否	nai pi	1845
 马朝旭	ma cau xyuh	1844
 采购	cai giu	1843
-个个	go go	1842
 职责	zeh zeh	1842
 兵刃	bin nin	1841
 议事	ni si	1840
@@ -5690,7 +5673,6 @@ import_tables:
 升高	sen gau	1142
 国防委员会	gueh fong wi jyun gui	1142
 深远	sen yon	1142
-算了	suon liau	1142
 过年	guo nien	1142
 刊物	kon weh	1141
 间接	gan jieh	1141
@@ -6754,7 +6736,6 @@ import_tables:
 挑选	tau xien	908
 苦笑	ku xieu	908
 使劲	si jing	906
-厕所	ceh so	906
 战车	zen jyu	906
 末年	meh nien	906
 村子	cen zi	905
@@ -7329,7 +7310,6 @@ import_tables:
 比武	bi wu	811
 葡萄	pu tau	811
 车上	jyu sang	811
-雪白	xieh peh	60000
 介于	gai jyu	810
 内讧	noi hung	810
 堆积	doi jih	810
@@ -8201,7 +8181,6 @@ import_tables:
 乌克兰	wu keh lan	696
 仇恨	ceu hen	696
 年末	nien meh	696
-恶心	wu xin	696
 警方	jin fong	696
 谷物	luh weh	696
 震撼	zen han	696
@@ -9051,7 +9030,6 @@ import_tables:
 亡国	mong gueh	614
 分水岭	fen xyu lin	614
 务实	wu seh	614
-学堂	hok tan	60000
 幽默	yiu meh	614
 推理	tui li	614
 摆手	bui xiu	614
@@ -11872,7 +11850,6 @@ import_tables:
 拆开	ca koi	429
 登台	den yi	429
 着陆	qio luh	429
-笔直	bih ceh	429
 经书	jing xyu	429
 身法	sen fah	429
 限定	han ding	429
@@ -12131,7 +12108,6 @@ import_tables:
 头衔	tiu han	415
 就读	qiu tuh	415
 意想不到	yi xian feh dau	415
-木匠	muh qiang	415
 浮肿	fu jyung	415
 深切	sen qieh	415
 狭小	hah xiau	415
@@ -15918,7 +15894,6 @@ import_tables:
 化妆	fa jyuong	286
 单向	dan xiang	286
 后主	hiu jyu	286
-后生	hiu sen	286
 告终	gau jyung	286
 嚣张气焰	xieu zang xi yen	286
 复印件	fuh yin qien	286
@@ -19598,7 +19573,6 @@ import_tables:
 申花队	sen fa doi	226
 相容	xian yung	226
 真实性	zen seh xing	226
-碧绿	bih luk	226
 终南山	jyung lang san	226
 肉眼	niuh ngan	226
 规律性	gui lih xing	226
@@ -25288,7 +25262,6 @@ import_tables:
 形式主义	xin seh jyu ni	148
 惨象	can qian	148
 成片	sen pien	148
-排场	pai can	148
 推上	tui sang	148
 收摊	xiu tan	148
 故地	gu ti	148
@@ -27350,7 +27323,6 @@ import_tables:
 两盘	lian pon	130
 中加	jyung ga	130
 中国电影集团公司	jyung gueh tien yin qih ton gung si	130
-今朝	jin cau	130
 从今以后	qiung jin yi hiu	130
 何曾	ho zen	130
 儿孙	ni sen	130
@@ -28672,7 +28644,6 @@ import_tables:
 相碰	xian peng	121
 砝码	fah ma	121
 秘方	bi fong	121
-稀烂	xi lan	121
 窗上	cong sang	121
 章楚红	zan cu hung	121
 童立本	tung lih ben	121
@@ -40801,7 +40772,6 @@ import_tables:
 吹动	qyu tung	64
 吹箫	qyu xiau	64
 哀痛	ngoi tung	64
-哪样	lai yan	64
 哪里话	lai li wa	64
 唐突	tan tueh	64
 四一二	si yih e	64
@@ -42064,7 +42034,6 @@ import_tables:
 烫手	tong xiu	61
 爱妻	ngoi qi	61
 父权	fu qien	61
-爽利	song li	61
 牛股	ngiu gu	61
 犯罪人	fan jyu yuen	61
 王之仁	wong zi yuen	61
@@ -45476,7 +45445,6 @@ import_tables:
 决堤	jyueh di	52
 凄惶	qi wong	52
 几何图形	ji ho tu xin	52
-几多	ji do	60000
 几百元	ji beh nyuon	52
 凤尾	fung mi	52
 凤老爷	fung lau ya	52
@@ -49339,7 +49307,6 @@ import_tables:
 胡秉安	fu bin ngon	45
 胫骨	tiang gueh	45
 胸径	xiung jing	45
-脚踏车	jiah tah jyu	45
 脱俗	toi suh	45
 臊子	sau zi	45
 自主神经	ci jyu xyuon jing	45
@@ -86338,7 +86305,6 @@ import_tables:
 碳酸氢盐	tan son qin yen	13
 磨刀石	mon dau seh	13
 磷块岩	lin kuai ngan	13
-礼拜一	li bai yih	60000
 社会心理学家	sa gui xin li hok ga	13
 祁清彪	zi qin biau	13
 祝融峰	jiu yung feng	13
@@ -113116,7 +113082,6 @@ import_tables:
 因利乘便	yin li cen pien	6
 团粒	ton lih	6
 团组	ton zu	6
-困觉	kun goh	6
 围点打援	wei dien din yuon	6
 固定器	gu ding qi	6
 固镇	gu zen	6
@@ -196812,7 +196777,6 @@ import_tables:
 很傻	hen sa	3
 很僵	hen jian	3
 很凉	hen lian	3
-很厚	hen hiu	3
 很困	hen kun	3
 很多歌	hen do go	3
 很多面	hen do mien	3
@@ -209159,7 +209123,6 @@ import_tables:
 撒呓挣	sa ni zeng	3
 撒呓症	sa ni zen	3
 撒娇卖俏	sa gau mai qiau	3
-撒开	sa koi	3
 撒开来	sa koi loi	3
 撒手不干	sa xiu feh gon	3
 撒手尘寰	sa xiu cen xien	3
@@ -336692,14 +336655,10 @@ import_tables:
 啷	lang	30000
 爷子	ya zi	60000
 今日	jin nih	60000
-昨日	cah nih	60000
 早晨	zao xyuon	60000
 中边	jyung bien	60000
 夜边	ya bien	60000
-困觉	kun gau	60000
-上昼	sang jiu	60000
 下昼	ha jiu	60000
-落雨	lah yu	60000
 出晴	qyueh qin	60000
 结棍	jieh hun	60000
 後生	hiu sen	60000
@@ -336708,14 +336667,11 @@ import_tables:
 线车	xien jyu	60000
 线车	xien ca	60000
 博士	boh si	60000
-间里	kan li	60000
 头世	tiu si	60000
-厅下	tin ha	60000
 装憨	jyuong han	60000
 锅口	guo kiu	60000
 灶下	zau ha	60000
 东司滘	dung si gau	60000
-蕹菜	weng cai	60000
 㦿子	kang zi	60000
 屋场	wuh can	60000
 拗捩	yau lih	60000
@@ -336732,7 +336688,6 @@ import_tables:
 涿	cau	30000
 毃	ko	30000
 埋人	mai yuen	60000
-相骂	xian ma	60000
 睖	len	30000
 睃	so	30000
 䁐	yang	30000
@@ -370500,3 +370455,125 @@ import_tables:
 脱	to	90000
 褶	set	30000
 渑	cen	30000
+今哩	ken ne	60000
+今哩	ken neh	60000
+今哩	ken ni	60000
+今哩	ken nih	60000
+现在	xien cai	34145
+现在	xien coi	34145
+无有	miu	60000
+无有	mu yiu	60000
+还无	han mu	60000
+还无	hai mu	60000
+么哩	mo ni	60000
+么哩	mo li	60000
+那个	n go	14550
+哪里	na li	7571
+么地方	mo ti fong	60000
+哪样	nan	64
+哪样	na yang	64
+箇个	e go	60000
+个个	go go	1842
+这个	ze go	61310
+箇样	e yang	60000
+个样	go yang	60000
+这样	ze yang	48926
+舞么哩	wu mo ni	60000
+舞么哩	wu mo li	60000
+做么哩	zuo mo ni	60000
+做么哩	zuo mo li	60000
+几多	ji duo	60000
+佢哩	e li	60000
+佢哩	ke li	60000
+今朝	zen zau	130
+昨日	cah nih	60000
+明朝	meng zau	3845
+上昼	sang jiu	60000
+昼时	jiu si	60000
+夜上	ya sang	60000
+夜上	ye sang	60000
+困觉	kun gau	60000
+礼拜一	li bai yih	60000
+落雨	lah yu	60000
+杀料	sah liau	60000
+好老	hau lau	60000
+后生	hieu sen	286
+放心	fong xin	3856
+打流个	da lieu go	60000
+脚踏车	jiah tah ca	45
+学堂	hoh tang	60000
+木匠	muh qiang	415
+间里	gan li	60000
+厅下	ting ha	60000
+灶脚	zau jiah	60000
+茅司	mau si	60000
+厕所	ceh suo	906
+蕹菜	weng cai	60000
+屋里	weh lih	1928
+街上	gai sang	60000
+自己	ci ji	90933
+姩崽	nien zoi	60000
+姩哩崽	nien li zoi	60000
+稀烂	xi lan	121
+澄黄	sen wong	60000
+碧绿	bih luk	226
+立乌	lih wu	60000
+漆暗	qih ngen	60000
+雪白	xieh pah	60000
+笔直	bih ceh	429
+一脚儿	yih jieh ni	60000
+一脚啊儿	yih jieh ngah ni	60000
+老是	lau si	60000
+突呐	tuh na	60000
+一起	yih qi	15976
+有个时间	yiu go si gan	60000
+转屋	jyuon weh	60000
+去归	ke gui	60000
+誺记	lai ji	60000
+开始	koi si	38139
+着雨	cah yu	60000
+相骂	xiang ma	60000
+针扎样个	zen zah yang go	60000
+准备	jyun pi	16199
+腥人家	xing nin ga	60000
+恶心	ngoh xin	696
+不要	beh yau	14786
+很长	lo cang	60000
+很厚	dah hiu	3
+很厚	deh hiu	3
+吃不	qih bu	60000
+恰么脚	kan mo jieh	60000
+恰么脚	kah mo jieh	60000
+舞好来	wu hau loi	60000
+电芯修好不之后，试下起	tien xin xiu hau zi hiu si ha qi	60000
+不咯	bu lo	60000
+吃碗饭凑	qih won fan qiu	60000
+看下起	kon ha qi	60000
+可以	ko yi	70958
+吃得	qih dih	60000
+外面	ngai mien	4049
+走得过去啵	jiu dih guo ke bo	60000
+撒开	sah koi	3
+算了	qiang mo	1142
+戳卵	cah luon	60000
+顺手边	xyuen xiu bien	60000
+反手边	fan xiu bien	60000
+细伢俚	xia li	60000
+老嫲	lau ma	60000
+祖祖	zu zu	60000
+嫲嫲	ma ma	60000
+爷佬	ya lau	60000
+爷佬子	ya lau zi	60000
+舅爹	qiu die	60000
+妗奶	qin ne	60000
+清拣	qing gan	60000
+爽利	xyuong li	61
+排场	pai cang	148
+洋光	yang guong	60000
+忽霎下	hueh sah ha	60000
+忽霎一下	hueh sah yih ha	60000
+话事	wa si	60000
+吖开嘴	nga koi ji	60000
+急着	qien mo	60000
+急着	qien bo	60000
+急到	jih dau	60000
