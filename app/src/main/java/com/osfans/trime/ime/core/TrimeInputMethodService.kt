@@ -42,6 +42,7 @@ import com.osfans.trime.core.RimeKeyMapping
 import com.osfans.trime.core.RimeMessage
 import com.osfans.trime.daemon.RimeDaemon
 import com.osfans.trime.daemon.RimeSession
+import com.osfans.trime.data.base.DataManager
 import com.osfans.trime.data.prefs.AppPrefs
 import com.osfans.trime.data.prefs.PreferenceDelegate
 import com.osfans.trime.data.prefs.PreferenceDelegateProvider
@@ -163,6 +164,11 @@ open class TrimeInputMethodService : LifecycleInputMethodService() {
     }
 
     override fun onCreate() {
+        // ThemeManager reads files deployed from the bundled shared data below. Rime startup
+        // performs the same sync asynchronously, which can race with theme initialization on a
+        // fresh install. Complete the first sync here so every required resource exists before
+        // either Rime or ThemeManager starts using it.
+        DataManager.sync()
         rime = RimeDaemon.createSession(javaClass.name)
         lifecycleScope.launch {
             jobs.consumeEach { it.join() }

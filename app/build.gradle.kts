@@ -28,8 +28,8 @@ android {
         applicationId = "org.ganyutongxunshe.ganinput"
         minSdk = 21
         targetSdk = 35
-        versionCode = 20260718
-        versionName = "3.3.12"
+        versionCode = 20260722
+        versionName = "3.3.13"
 
         multiDexEnabled = true
         buildConfigField("String", "BUILDER", "\"${project.builder}\"")
