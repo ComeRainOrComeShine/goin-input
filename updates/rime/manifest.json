@@ -1,5 +1,5 @@
 {
-  "version": "2026.07.22-yiyang-vocabulary",
+  "version": "2026.07.22-fenyi-sync",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -9,12 +9,12 @@
     {
       "path": "gonnyufennixyulufa.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.dict.yaml",
-      "sha256": "3145984c6c69fda4efd0cd992851e83d2be77ae79730716116d80609f590fcd2"
+      "sha256": "b1e8bf218707d6c9bba2bc884715eaf97d0ce484c96b585596395674661f28b5"
     },
     {
       "path": "gonnyufennixyulufa_auxiliary_comments.tsv",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa_auxiliary_comments.tsv",
-      "sha256": "559aedf76b3e5e59b3adcf0070955de804318707721affca951bc4be5b35fca4"
+      "sha256": "c0742622cd2ae91e9522eaf36a8ee200163cb9077efe81c61d3130e966141336"
     },
     {
       "path": "gonnyufennixyulufa_auxiliary_pinyin.schema.yaml",
