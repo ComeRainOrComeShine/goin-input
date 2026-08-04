@@ -1,10 +1,10 @@
 {
-  "version": "2026.07.22-fenyi-sync",
+  "version": "2026.08.04-fenyi-apple-punctuation",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyufennixyulufa.schema.yaml",
-      "sha256": "ee57dccf63a74c227d8ef5d5ebe704add338a07ace921bf1bdbd0da37c94cf30"
+      "sha256": "ae2e9b21b0426aab790c1e921594bad4f57e153daeed350f928f13d349b883e8"
     },
     {
       "path": "gonnyufennixyulufa.dict.yaml",

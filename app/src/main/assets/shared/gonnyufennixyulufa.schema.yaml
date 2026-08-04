@@ -19,6 +19,7 @@ switches:
     reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
+    reset: 0
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
@@ -145,6 +146,39 @@ reverse_lookup:
 
 punctuator:
   import_preset: symbols
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《 ]
+    '>' : [ 》 ]
+    '/' : [ '/' ]
+    '?' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、 ]
+    '|' : [ '|' ]
+    '`' : [ '`' ]
+    '~' : [ '~' ]
+    '!' : { commit: ！ }
+    '@' : [ '@' ]
+    '#' : [ '#' ]
+    '%' : [ '%' ]
+    '$' : [ '$' ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*' ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : [ '=' ]
+    '[' : [ 【 ]
+    ']' : [ 】 ]
+    '{' : [ 「 ]
+    '}' : [ 」 ]
 
 key_binder:
   import_preset: default

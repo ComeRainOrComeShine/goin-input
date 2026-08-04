@@ -1,11 +1,11 @@
 {
-    "sha256": "bd91d3fa58515dcbd39bc3032499373808f580c20eb5171c7eefccd0a3a2b411",
+    "sha256": "88502d3c3f101891fb8fbb24ec73ba9261b50c5187ed97f46c1b7d987ffbe1c1",
     "files": {
         "shared": "",
         "shared/default.yaml": "dd55653a991f9418eb425ee2112666f82e3e753c5ce3ed5702dd243041a45382",
         "shared/essay.txt": "196d508a9bb12fc6d711eed83f5ddc4d5c2d382d92d15b4e51175e4d3802cfab",
         "shared/gonnyufennixyulufa.dict.yaml": "b1e8bf218707d6c9bba2bc884715eaf97d0ce484c96b585596395674661f28b5",
-        "shared/gonnyufennixyulufa.schema.yaml": "ee57dccf63a74c227d8ef5d5ebe704add338a07ace921bf1bdbd0da37c94cf30",
+        "shared/gonnyufennixyulufa.schema.yaml": "ae2e9b21b0426aab790c1e921594bad4f57e153daeed350f928f13d349b883e8",
         "shared/gonnyufennixyulufa_auxiliary_comments.tsv": "c0742622cd2ae91e9522eaf36a8ee200163cb9077efe81c61d3130e966141336",
         "shared/gonnyufennixyulufa_auxiliary_pinyin.schema.yaml": "d6e259c1d177d92ffd416ee570f9e66e942e7f62abacfc5f8f0b41eceb176dff",
         "shared/gonnyuyiyongxyulufa.dict.yaml": "2e5eb1afd92c344a8e792a533af4e9df65dba67a619e2c4507755c2068663366",
