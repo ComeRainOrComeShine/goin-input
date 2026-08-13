@@ -1,5 +1,5 @@
 {
-  "version": "2026.08.04-fenyi-apple-punctuation",
+  "version": "2026.08.13-yiyang-readings",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -29,7 +29,7 @@
     {
       "path": "gonnyuyiyongxyulufa.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.dict.yaml",
-      "sha256": "2e5eb1afd92c344a8e792a533af4e9df65dba67a619e2c4507755c2068663366"
+      "sha256": "4634aaa88d76fc41b2b4726d87736e570654772bbed868a92754df5e1f1b19aa"
     },
     {
       "path": "gonnyuyiyongxyulufa_user_readings.dict.yaml",

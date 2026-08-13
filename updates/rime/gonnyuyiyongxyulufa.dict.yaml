@@ -6,12 +6,15 @@
 
 ---
 name: gonnyuyiyongxyulufa
-version: "2026-07-22-vocabulary"
+version: "2026-08-13-readings"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
   - gonnyuyiyongxyulufa_user_readings
 ...
+啵	bo	30000
+咯	lo	30000
+佬	lau	30000
 煲	bau	30000
 电饭煲	tien fan bau	30000
 世	si	120000
@@ -43,7 +46,8 @@ import_tables:
 倘	tong	30000
 候	heu	31521
 倬	zo	120000
-做	zu	50331
+做	zuo	50331
+做	zo	12582
 儇	xon	120000
 兑	dei	30000
 冗	leng	30000
@@ -182,7 +186,7 @@ import_tables:
 妲	lai	3000
 妲	tai	2400
 妲	koi	2000
-姊	zu	30000
+姊	ji	30000
 娜	lo	30000
 婞	tin	12000
 婞	bin	3000
@@ -336721,8 +336725,8 @@ import_tables:
 晾	liong	30000
 漱	xyu	30000
 烫	tong	30000
-着	jio	188584
-着	qio	188584
+着	cah	188584
+着	zah	47146
 砖	jon	30000
 砖	don	30000
 窝	wo	30000
@@ -343073,8 +343077,9 @@ import_tables:
 仁	len	120000
 朲	yuen	1
 朲	len	1
-人	yuen	313209
-人	len	313209
+人	nin	313209
+人	yun	78302
+人	nien	62641
 神	xyuon	30000
 神	cuon	30000
 亲	qin	120000
@@ -347425,9 +347430,8 @@ import_tables:
 傩	nuo	120000
 𠹈	no	1
 𠹈	nuo	1
-那	no	111550
-那	nuo	111550
-那	na	111550
+那	n	111550
+那	na	27887
 挪	no	30000
 挪	nuo	30000
 魺	ho	1
@@ -351804,12 +351808,7 @@ import_tables:
 䍍	feu	1
 䍍	kuh	1
 䍍	kueh	1
-不	feh	360331
-不	fiu	360331
-不	fieu	360331
-不	feu	360331
-不	biu	360331
-不	bieu	360331
+不	beh	360331
 𢬆	qiu	1
 𢬆	qieu	1
 醔	qiu	1
@@ -352743,7 +352742,8 @@ import_tables:
 眈	tan	12000
 眈	dan	12000
 昙	tan	30000
-潭	tan	30000
+潭	ten	30000
+潭	tan	7500
 𦗡	tan	1
 傪	can	1
 傪	cen	1
@@ -354369,9 +354369,8 @@ import_tables:
 癙	xyu	1
 癙	qyu	1
 癙	su	1
-鼠	xyu	30000
 鼠	qyu	30000
-鼠	su	30000
+鼠	xyu	7500
 暑	xyu	30000
 暑	qyu	30000
 暑	su	30000
@@ -354779,7 +354778,8 @@ import_tables:
 䥈	man	1
 䥈	mang	1
 峔	mu	1
-妈	mu	30000
+妈	ma	30000
+妈	me	7500
 莽	mong	30000
 莽	man	30000
 莽	mang	30000
@@ -356484,10 +356484,8 @@ import_tables:
 𫮃	xyuen	1
 𫮃	sen	1
 𫮃	san	1
-善	xyuong	30000
-善	xyuen	30000
-善	sen	30000
-善	san	30000
+善	xyuon	30000
+善	sen	7500
 墡	xyuong	1
 墡	xyuen	1
 墡	sen	1
@@ -358340,8 +358338,7 @@ import_tables:
 𩕢	ding	1
 酊	din	12000
 酊	ding	12000
-打	din	33853
-打	ding	33853
+打	da	33853
 耵	din	12000
 耵	ding	12000
 𩠑	din	1
@@ -358736,9 +358733,7 @@ import_tables:
 某	miu	30000
 某	meu	30000
 某	mieu	30000
-母	miu	60000
-母	meu	60000
-母	mieu	60000
+母	mu	60000
 畮	miu	1
 畮	meu	1
 畮	mieu	1
@@ -359044,9 +359039,8 @@ import_tables:
 贛	gan	1
 贛	gung	1
 贛	kueng	1
-赣	gan	160000
-赣	gung	160000
-赣	kueng	160000
+赣	gen	160000
+赣	gon	40000
 𧆐	gan	1
 𧆐	gung	1
 𧆐	kueng	1
@@ -360708,9 +360702,8 @@ import_tables:
 䨁	wu	1
 緅	zu	1
 緅	jyu	1
-足	zuk	30000
-足	zu	30000
-足	jyu	30000
+足	zuh	30000
+足	zu	7500
 懼	qyu	1
 惧	qyu	30000
 具	qyu	30000
@@ -360901,10 +360894,10 @@ import_tables:
 悑	pu	1
 怖	pu	30000
 𤸵	pu	1
-错	cu	30000
-错	cah	30000
-错	coh	30000
-措	cu	30000
+错	cuo	30000
+错	co	7500
+措	cuo	30000
+措	co	7500
 醋	cu	30000
 厝	cu	12000
 厝	cah	12000
@@ -361609,10 +361602,9 @@ import_tables:
 禬	fi	1
 禬	huei	1
 禬	gui	1
-会	gui	120000
-会	hui	120000
-会	fi	120000
-会	huei	120000
+会	wi	120000
+会	hui	30000
+会	fi	24000
 绘	hui	30000
 绘	fi	30000
 绘	huei	30000
@@ -362920,7 +362912,9 @@ import_tables:
 谚	yen	30000
 彦	yen	12000
 諺	yen	1
-这	yen	261791
+这	e	261791
+这	ze	65447
+这	yen	52358
 唁	yen	12000
 譴	qien	1
 谴	qien	30000
@@ -363285,8 +363279,9 @@ import_tables:
 趮	zau	1
 躁	zau	30000
 灶	zau	30000
-箇	go	1
-箇	e	1
+箇	e	30000
+箇	ze	7500
+箇	go	6000
 個	go	1
 個	e	1
 个	go	142747
@@ -369608,6 +369603,7 @@ import_tables:
 㥁	deh	1
 𠮊	deh	1
 得	deh	134479
+得	dih	33619
 𨁽	deh	1
 𣌏	deh	1
 德	deh	30000
@@ -369797,7 +369793,9 @@ import_tables:
 𩾳	jih	1
 級	jih	1
 𦳌	jih	1
-给	jih	69480
+给	gih	69480
+给	gei	17370
+给	jih	13896
 急	jih	30000
 㽺	jih	1
 㽺	hah	1
