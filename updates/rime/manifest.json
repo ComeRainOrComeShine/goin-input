@@ -1,5 +1,5 @@
 {
-  "version": "2026.08.13-yiyang-readings-phrases",
+  "version": "2026.08.13-yiyang-nan-fix",
   "files": [
     {
       "path": "gonnyufennixyulufa.schema.yaml",
@@ -29,7 +29,7 @@
     {
       "path": "gonnyuyiyongxyulufa.dict.yaml",
       "url": "https://raw.githubusercontent.com/ComeRainOrComeShine/goin-input/develop/updates/rime/gonnyuyiyongxyulufa.dict.yaml",
-      "sha256": "6535cc1278b3fc7558ed3f04ada820fcb910129bb89aca1f45f7cc1c8111578d"
+      "sha256": "61dd8b62a0236749868d9259d9350ea387fbc2fce03fbc3a4c0d9898dfdc97d2"
     },
     {
       "path": "gonnyuyiyongxyulufa_user_readings.dict.yaml",

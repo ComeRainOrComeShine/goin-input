@@ -6,12 +6,13 @@
 
 ---
 name: gonnyuyiyongxyulufa
-version: "2026-08-13-readings-phrases"
+version: "2026-08-13-nan-fix"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
   - gonnyuyiyongxyulufa_user_readings
 ...
+奻	nan	30000
 啵	bo	30000
 咯	lo	30000
 佬	lau	30000
@@ -70,8 +71,7 @@ import_tables:
 勾	gieu	30000
 匆	ceng	30000
 卓	zo	30000
-南	lan	30000
-南	lang	120000
+南	nan	120000
 卡	ka	30000
 卫	wei	120000
 卮	zi	30000
@@ -667,10 +667,7 @@ import_tables:
 胸	xiung	30000
 脆	kui	30000
 腠	ceu	30000
-腩	hon	12000
-腩	kan	3000
-腩	cen	2400
-腩	gong	2000
+腩	nan	30000
 腮	soi	30000
 腺	xien	30000
 腽	tu	12000
@@ -834,7 +831,7 @@ import_tables:
 赞	zan	30000
 赟	yin	30000
 赟	yen	7500
-赧	hon	12000
+赧	nan	30000
 赪	zeng	30000
 趑	yi	12000
 趑	zu	3000
@@ -349535,7 +349532,8 @@ import_tables:
 匨	zang	1
 臧	zan	12000
 臧	zang	12000
-囊	nang	30000
+囊	nan	30000
+囊	nang	7500
 彷	pan	30000
 彷	pang	30000
 彷	pong	30000
@@ -357944,7 +357942,8 @@ import_tables:
 髒	zan	1
 髒	zang	1
 灢	nang	1
-曩	nang	12000
+曩	nan	30000
+曩	nang	7500
 骯	hong	1
 骯	kong	1
 骯	kan	1
@@ -362518,10 +362517,10 @@ import_tables:
 爛	lan	1
 爤	lan	1
 𦍀	tan	1
-难	tan	30000
+难	nan	30000
 㬮	tan	1
 𢅼	tan	1
-難	tan	1
+難	nan	30000
 𪆶	can	1
 粲	can	30000
 璨	can	30000
@@ -363727,7 +363726,8 @@ import_tables:
 旷	kuong	30000
 矌	kuong	1
 㚂	nang	1
-儾	nang	1
+儾	nang	30000
+儾	nan	7500
 𠷔	sang	1
 𠷔	san	1
 擴	hang	1
@@ -370468,7 +370468,6 @@ import_tables:
 那个	n go	14550
 哪里	na li	7571
 么地方	mo ti fong	60000
-哪样	nan	64
 哪样	na yang	64
 箇个	e go	60000
 个个	go go	1842
